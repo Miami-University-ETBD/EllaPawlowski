@@ -1,0 +1,159 @@
+/* General Body Styling */
+body {
+    background-color: Gainsboro;
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+  }
+  
+  /* Header Styling */
+  header {
+    text-align: center;
+    padding: 20px;
+    
+    
+  }
+  
+  header h1 {
+    color: RoyalBlue;
+    margin-bottom: 5px;
+    
+  }
+  
+  header p {
+    color: #555;
+    margin: 0;
+    
+  }
+  
+  /* Centered Heading Styling */
+  h1, h2, h3 {
+    text-align: center;
+    color: DodgerBlue;
+  }
+  
+  h1 {
+    color: RoyalBlue;
+    text-decoration: underline;
+    
+  }
+  
+  /* Section Text Styling */
+  p {
+    text-align: center;
+    color: #333;
+  }
+  
+  p b, p em {
+    color: RoyalBlue;
+    font-style: italic;
+    font-weight: bold;
+  }
+  
+  /* Programs List Styling */
+  ul {
+    list-style-type: square;
+    width: 50%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  
+  ul li {
+    font-size: 18px;
+    color: #444;
+    padding: 5px 0;
+    text-align: left;
+  }
+  
+  /* Table Styling */
+  table {
+    width: 100%;
+    margin: 20px 0;
+    border-collapse: collapse;
+  }
+  
+  th, td {
+    padding: 10px;
+    border: 1px solid black;
+    text-align: center;
+  }
+  
+  th {
+    background-color: RoyalBlue;
+    color: white;
+  }
+  
+  td {
+    background-color: #f9f9f9;
+  }
+  
+  /* Links Styling */
+  a {
+    color: DodgerBlue;
+    text-decoration: none;
+  }
+  
+  a:hover {
+    text-decoration: underline;
+  }
+  
+  
+  /* Aside (Sidebar) Styling */
+  aside {
+    background-color: #f4f4f4;
+    border-left: 5px solid RoyalBlue;
+    margin: 20px;
+    padding: 20px;
+    text-align: center;
+  }
+  
+  aside p {
+    color: #555;
+    font-style: italic;
+  }
+  
+  /* Horizontal Rule Styling */
+  hr {
+    border: 0;
+    height: 2px;
+    background-color: RoyalBlue;
+    margin: 20px 0;
+  }
+  
+  /* Small Text for Emphasis */
+  small {
+    font-size: 12px;
+    color: #777;
+  }
+   footer {
+          background-color: rgb(222, 233, 247);
+          position: flex;
+           padding-bottom: 30px;
+           padding-left: 20px;
+           bottom: 20px;
+           width: 100%;
+                  height: 40px;
+                  color: black;
+              }
+  /* Blockquote Styling */
+  blockquote {
+    background-color: white ; /* Light background for contrast */
+    border-left: 5px solid RoyalBlue; /* Blue left border */
+    padding: 15px; /* Padding for space inside */
+    margin: 20px auto; /* Centered with margin */
+    font-style: italic; /* Italic text for emphasis */
+    color: #333; /* Darker text color */
+    font-size: 1.2em; /* Slightly larger font size */
+    max-width: 800px; /* Maximum width for readability */
+    text-align: left; /* Align text to the left */
+  }
+  
+  /* Citation Styling */
+  blockquote cite {
+    display: block; /* Block display to separate from the quote */
+    margin-top: 10px; /* Space above citation */
+    font-weight: bold; /* Bold citation for emphasis */
+    color: RoyalBlue; /* Blue color for citation */
+    text-align: right; /* Right align the citation */
+  }
