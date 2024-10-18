@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link rel="stylesheet" href="pagetwo.css">
+
+
+   <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+  </head>
+  <body>
+   <!-- Header of the website -->
+   <header>
+       <h1>Join us on Your Journey to Recovery</h1>
+       <div class="navbar">
+        <a href="index.html">HealFit Home</a>
+        <a href="aboutus.html">Learn More</a>
+        <a href="ourpromise.html">Our Promise</a>
+    </div>
+    
+   </header>
+
+
+   <!-- Main container with Flexbox layout -->
+   <div class="container">
+    <img src="images/stretching.jpg" alt="Gym Weights" width="500" height="333" class="shadowed">
+    <img src="images/weights.jpg" alt="Gym Weights" width="500" height="333">
+
+   
+       <div class="main-content">
+         
+           <section>
+               <h2>About Us</h2>
+           
+             <p><strong>Healfit</strong> believes in empowering individuals to regain strength and confidence through innovative, recovery-focused fitness solutions. Our <em>mission</em> is to bridge the gap between rehabilitation and active living by offering tailored workout programs, expert guidance, and recovery tools designed for people at <em>every stage</em> of their healing journey.</p>
+            <p>whether you're <em>recovering</em> from surgery, <em>overcoming</em> an injury, or simply looking to maintain an active lifestyle while <em>managing</em> chronic conditions, <bold>HealFit</bold> is here for you.</p>
+
+
+               <h2>Our Commitment</h2>
+               <p>At <strong>HealFit</strong>, we are committed to supporting you through every step of your recovery and fitness journey. Your well-being is our priority, and we’re here to help you rebuild strength, restore confidence, and achieve lasting results. Our team of experts include:</p>
+               <ul>
+                   <li>Physical Therapists</li>
+                   <li>Certified Fitness Trainers</li>
+                   <li>Excersize Physiologists</li>
+                   <li>Sports Medicine Specialists</li>
+                   <li>Rehabilitation Coaches</li>
+                  
+   </ul>
+            
+
+<p>Our team is dedicated to combining cutting-edge technology with compassionate guidance to ensure that your path to healing is smooth, empowering, and sustainable</p>
+
+
+
+               <h2>Digital Services</h2>
+               <table>
+                   <tr>
+                       <th>Service</th>
+                       <th>Description</th>
+                     
+                       
+                   </tr>
+                   <tr>
+                       <td>Virtual Physical Therapy Sessions</td>
+                       <td>Clients can connect with licensed physical therapists via video calls for guided recovery exercises</td>
+                     
+                       
+                   </tr>
+                   <tr>
+                       <td>Personalized Fitness Programs.</td>
+                       <td> custom workout plans tailored to the clients recovery stage, fitness level, and goals, with step-by-step video demonstrations</td>
+                    
+                       
+                   </tr>
+                   <tr>
+                       <td>Virtual Support Groups</td>
+                       <td>Online forums or support groups where clients can share their experiences, seek advice, and connect with others going through similar recovery journeys</td>
+                    
+                      
+                   </tr>
+                   <tr>
+                       <td>Progress Tracking</td>
+                       <td>clients can track their recovery progress, log exercises, monitor pain levels, set goals, and communicate with their rehab team</td>
+                     
+                     
+                   </tr>
+                 
+               </table>
+             
+
+
+           <!-- Aside for additional information -->
+ <aside>
+    <div>
+               <h2>Subscription</h2>
+               <p>Try two months risk-free! Clients will be required to pay $50 each month following their free trial.</p>
+               <h2>Contact Us</h2>
+             
+   <p>Phone: (123) 456-7890</p>
+   <p>Email: Healfit@Recovery.com</p>
+  
+           </aside>
+       </div>
+       <h3>Enter your phone number to sign up!</h3>
+        <br>
+        <input id="userInput"> <br><br>
+        <button onclick="myFunction()">Submit</button>
+        <p id="message"></p>
+        <script>function myFunction() {
+        let userInput = document.querySelector ("#userInput");
+        let message = document.querySelector ("#message");
+        message.innerHTML = "Thank you! HealFit will reach out soon. " + userInput.value;
+        }
+        </script>
+
+
+<script>
+function getOption() {
+var obj = document.getElementById("mySelect");
+document.getElementById("demo").innerHTML =
+obj.options[obj.selectedIndex].text;
+}
+</script>
+<form>
+How would you like us to contact you?:
+<select id="mySelect">
+<option>Email</option>
+<option>Text</option>
+<option>Call</option>
+</select>
+<br><br>
+<input type="button" onclick="getOption()" value="Submit!">
+</form>
+<p id="demo"></p>
+
+
+
+       <!-- Footer of the website -->
+       <footer>
+           <p>&copy; 2024 HealFit All rights reserved.</p>
+       </footer>
+   </div>
+</body>
+</html>
