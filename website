@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <link rel="stylesheet" href="pagetwo.css">
+
+
+   <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+  </head>
+  <body>
+   <!-- Header of the website -->
+   <header>
+       <h1>Welcome to HealFit!</h1>
+       <div class="navbar">
+        <a href="index.html">HealFit Home</a>
+        <a href="aboutus.html">Learn More</a>
+        <a href="ourpromise.html">Our Promise</a>
+        <a href="materialize.html">Sign Up</a>
+    </div>
+    
+   </header>
+
+
+   <!-- Main container with Flexbox layout -->
+   <div class="container">
+   
+   
+
+   
+       <div class="main-content">
+         
+           <section>
+              
+           
+             <p>At HealFit, recovery is more than just healing, it's about rebuilding <strong>strength</strong> and <strong>confidence</strong> everyday. Whether you're overcoming an injury or looking to improve mobility, HealFit's personalized recovery plans and expert guidance help you take the next step toward a healthier, more active life. Empower yourself with <em><strong>safe,</strong></em> effective exercises designed to support your journey back to <em><strong>full health!</strong></em></p>
+
+
+               
+               <p><em>Join thousands of people on their journey to recovery!</em></p>
+               <p><em>Don't worry about the costs! First month is on us, and if you decide HealFit isn't for you, you can cancel your subscription at any time.</em></p>
+               <h1><ul>Programs that HealFit offers:</ul></h1>
+               <ul>
+                   <li>Post-injury rehab</li>
+                   <li>Post-surgery rehab</li>
+                   <li>Low-impact fitness</li>
+                   <li>Strength rebuilding</li>
+                   <li>RMobility restoration</li>
+                   
+                  
+   </ul>
+   <h4>And so much more!</h4>
+            
+
+
+
+
+               <h2>Here are just a few of the injuries that Healfit touches on...</h2>
+               <table>
+                   <tr>
+                       <th>location</th>
+                       <th>Injury</th>
+                     
+                       
+                   </tr>
+                   <tr>
+                       <td>Shoulder</td>
+                       <td>Rotator cuff tear, AC joint injury, shoulder tendonitis</td>
+                     
+                       
+                   </tr>
+                   <tr>
+                       <td>Knee</td>
+                       <td> ACL tear, MCL tear, meniscus tear</td>
+                    
+                       
+                   </tr>
+                   <tr>
+                       <td>Leg/Thigh</td>
+                       <td>Hamstring strain, Quadriceps strain, thigh ontusion</td>
+                    
+                      
+                   
+                     
+                   </tr>
+                 
+               </table>
+
+               <h3>Don't want to sign up yet? Enter your email here to recieve weekly updates, information, discounts and more! </h3>
+                <br>
+                <input id="userInput"> <br><br>
+                <button onclick="myFunction()">Submit</button>
+                <p id="message"></p>
+                <script>function myFunction() {
+                let userInput = document.querySelector ("#userInput");
+                let message = document.querySelector ("#message");
+                message.innerHTML = "Thank you! " + userInput.value;
+                }
+                </script>
+     
+             
+
+
+        
+
+
+       <!-- Footer of the website -->
+       <footer>
+           <p>&copy; 2024 HealFit All rights reserved. <p> <a href="https://my.clevelandclinic.org/health/diseases/22093-sports-injuries">Cleveland Clinic</a> | </p>
+       </footer>
+   </div>
+</body>
+</html>

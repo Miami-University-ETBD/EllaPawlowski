@@ -1,10 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
  <link rel="stylesheet" href="pagetwo.css">
 
 
    <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <style>
+
+</style>
    
   </head>
   <body>
@@ -15,9 +20,12 @@
         <a href="index.html">HealFit Home</a>
         <a href="aboutus.html">Learn More</a>
         <a href="ourpromise.html">Our Promise</a>
+        <a href="materialize.html">Sign Up</a>
     </div>
     
    </header>
+
+
 
 
    <!-- Main container with Flexbox layout -->
@@ -29,6 +37,15 @@
        <div class="main-content">
          
            <section>
+
+            <div class="carousel">
+                <a class="carousel-item" href="#one!"><img src="images/1.jpg"></a>
+                <a class="carousel-item" href="#two!"><img src="images/2.jpg"></a>
+                <a class="carousel-item" href="#three!"><img src="images/3.jpg"></a>
+                <a class="carousel-item" href="#four!"><img src="images/4.jpg"></a>
+                <a class="carousel-item" href="#five!"><img src="images/groupstretch.jpg"></a>
+              </div>
+            
               
            
              <p>At HealFit, recovery is more than just healing, it's about rebuilding <strong>strength</strong> and <strong>confidence</strong> everyday. Whether you're overcoming an injury or looking to improve mobility, HealFit's personalized recovery plans and expert guidance help you take the next step toward a healthier, more active life. Empower yourself with <em><strong>safe,</strong></em> effective exercises designed to support your journey back to <em><strong>full health!</strong></em></p>
@@ -107,5 +124,14 @@
            <p>&copy; 2024 HealFit All rights reserved. <p> <a href="https://my.clevelandclinic.org/health/diseases/22093-sports-injuries">Cleveland Clinic</a> | </p>
        </footer>
    </div>
+   
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+   <script>
+    document.addEventListener('DOMContentLoaded', function() {
+        var elems = document.querySelectorAll('.carousel');
+        var instances = M.Carousel.init(elems);
+    });
+    </script>
+   
 </body>
 </html>
