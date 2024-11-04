@@ -5,7 +5,7 @@
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>HealFit</title>
    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+ 
    <style>
        .header-bg {
            background-color: #bbdefb; /* blue background */
@@ -33,7 +33,7 @@
     <li><a href="index.html">HealFit Home</a></li>
     <li> <a href="aboutus.html">Learn More</a></li>
    <li> <a href="ourpromise.html">Our Promise</a></li>
-  <li><a href="materialize.html">Materialize</a></li>           
+  <li><a href="materialize.html">Sign Up</a></li>           
             </ul>
         </div>
     </div>
@@ -65,6 +65,12 @@
             </div>
         </div>
     </div>
+   
+
+      
+    
+            
+    
  
  
     <!-- Menu Section -->
@@ -109,6 +115,38 @@
             </table>
         </div>
     </div>
+
+    <div id="radio-section" class="section container">
+        <h2>Select Your Favorite Plan</h2>
+        <form>
+            <p>
+                <label>
+                    <input name="pastry" type="radio" value="Basic" onclick="displayPastry()"/>
+                    <span>Basic</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input name="pastry" type="radio" value="Premium" onclick="displayPastry()"/>
+                    <span>Premium</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input name="pastry" type="radio" value="Ultimate" onclick="displayPastry()"/>
+                    <span>Ultimate</span>
+                </label>
+            </p>
+            <p>
+                <label>
+                    <input name="pastry" type="radio" value="Elite" onclick="displayPastry()"/>
+                    <span>Elite</span>
+                </label>
+        </form>
+        <div id="pastry-response"></div>
+    </div>
+ 
+  
     <div class="row">
  
  
@@ -125,10 +163,38 @@
             <blockquote>Emily Davis Exercise Physiologist</blockquote>
         </div>
        </div>
+
+     
+       <ul class="collapsible">
+        <li>
+            <div class="collapsible-header">Dr. Sarah Smith</div>
+            <div class="collapsible-body"><span>Sarah is a healthcare professional who focuses on the prevention, diagnosis, treatment, and rehabilitation of injuries related to sports and physical activity. She helps athletes and active individuals stay healthy, recover from injuries, and enhance their performance.</span></div>
+        </li>
+        <li>
+            <div class="collapsible-header">Dr. John Tully</div>
+            <div class="collapsible-body"><span>John is a healthcare professional specializing in helping people restore and maintain movement, physical function, and overall well-being. He works with patients of all ages who may be recovering from injuries, surgeries, illnesses, or disabilities, aiming to relieve pain, improve mobility, and promote overall fitness.</span></div>
+        </li>
+        <li>
+            <div class="collapsible-header">Emily Davis</div>
+            <div class="collapsible-body"><span>Emily is a healthcare professional who specializes in understanding how the human body responds to physical activity, exercise, and fitness training. She uses scientific principles to help people improve their physical health, fitness, and performance, whether they’re athletes seeking an edge, patients recovering from illness or injury, or individuals aiming for better overall health.</span></div>
+        </li>
+    </ul>
        
        <div class="responsive-video"></div>
        <iframe width="560" height="315" src="https://www.youtube.com/embed/s1jm_V9W3XY?si=6hyc2HbeOeB2yMdn" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
       </div>
+
+      <div id="feedback-section" class="section container">
+        <h2>Subscribe to Healfit's newsletter</h2>
+        <form onsubmit="submitEmail(event)">
+            <div class="input-field">
+                <input id="email" type="email" required>
+                <label for="email">Email</label>
+            </div>
+            <button type="submit" class="btn waves-effect waves-light">Subscribe</button>
+        </form>
+        <div id="email-response"></div>
+    </div>
     <!-- Contact Section -->
     <div id="contact" class="section section-bg">
         <div class="container">
@@ -173,5 +239,54 @@
             </div>
         </div>
     </footer>
+  
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script>
+
+
+ // Initialize collapsible
+
+ document.addEventListener('DOMContentLoaded', function() {
+    M.Collapsible.init(document.querySelectorAll('.collapsible'));
+});
+   
+ 
+
+ 
+        
+
+        
+       
+
+
+ 
+ 
+        // Function to display selected pastry
+        function displayPastry() {
+            const selectedPastry = document.querySelector('input[name="pastry"]:checked').value;
+            document.getElementById('pastry-response').innerText = `You selected: ${selectedPastry}`;
+        }
+        // Function to handle email subscription form submission
+        function submitEmail(event) {
+            event.preventDefault();
+            const email = document.getElementById('email').value;
+            document.getElementById('email-response').innerText = `Thank you for subscribing! Newsletters will be sent to: ${email}`;
+            document.getElementById('email').value = ''; // Clear the input
+ 
+ 
+            // Display modal
+            const modalText = document.getElementById('modal-content-text');
+            modalText.innerText = `Thank you for subscribing! Newsletters will be sent to: ${email}`;
+            const modal = M.Modal.getInstance(document.getElementById('modal1'));
+            modal.open();
+        }
+     
+
+ 
+
+  
+    </script>
+ 
+
  </body>
  </html>
