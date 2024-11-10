@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+<meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HealFit</title>
+
+<script>
+    $(document).ready(function(){
+      $("#hide").click(function(){
+        $("p").hide();
+      });
+      $("#show").click(function(){
+        $("p").show();
+      });
+    });
+    </script>
+
+<script> 
+    $(document).ready(function(){
+      $("#flip").click(function(){
+        $("#panel").slideDown("slow");
+      });
+    });
+    </script>
+    <style> 
+        #panel, #flip {
+          padding: 5px;
+          text-align: center;
+          background-color: #a1f1d4;
+          border: solid 1px #c3c3c3;
+        }
+        
+        #panel {
+          padding: 50px;
+          display: none;
+        }
+        </style>
+
+<script>
+    $(document).ready(function(){
+      $("#myInput").on("keyup", function() {
+        var value = $(this).val().toLowerCase();
+        $("#myTable tr").filter(function() {
+          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+        });
+      });
+    });
+    </script>
+    <style>
+    table {
+      font-family: arial, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    td, th {
+      border: 1px solid #dddddd;
+      text-align: left;
+      padding: 8px;
+    }
+    
+    tr:nth-child(even) {
+      background-color: #dddddd;
+    }
+    </style>
+    
+
+
+
+</head>
+<body>
+<!-- Header of the website -->
+<header>
+   <h1>Welcome to Delicious Bakery</h1>
+  
+   <div class="navbar">
+       <a href="index.html">HealFit Home</a>
+       <a href="aboutus.html">Learn More</a>
+       <a href="ourpromise.html">Our Promise</a>
+       <a href="materialize.html">Sign Up</a>
+       <a href="jquery.html">JQuery</a>
+   </div>
+
+</header>
+
+<section style="background-color: #f1a1e8;">
+
+
+<p>Don't wait! We are so exctied to have you here and to join you on your journey back to full health. Sign up with us or email us to learn more. Remember, you will get a month free trial before payments begin.</p>
+
+<button id="hide">Hide</button>
+<button id="show">Show</button>
+</section>
+
+<section style="background-color: #a1f1d4;">
+
+
+<div id="flip">Click to show subscriptions</div>
+<div id="panel">Basic Recovery Plan ($50/month), Premium Wellness Plan ($80/month), Ultimate Performance Plan ($120/month), Elite Total Care Plan ($200/month)</div>
+</section>
+
+<section style="background-color: #91c0fd;"> 
+
+<h2>Want to personally contact some of our team members?</h2>
+<p>Type something in the input field to search the table for first names, last names or emails:</p> 
+</section> 
+<input id="myInput" type="text" placeholder="Search..">
+<br><br>
+
+<table>
+  <thead>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Email</th>
+  </tr>
+  </thead>
+  <tbody id="myTable">
+  <tr>
+    <td>Sarah</td>
+    <td>Smith</td>
+    <td>Sarah@smith.com</td>
+  </tr>
+  <tr>
+    <td>John</td>
+    <td>Tully</td>
+    <td>tully@mail.com</td>
+  </tr>
+  <tr>
+    <td>Emily</td>
+    <td>Davis</td>
+    <td>emily@healfit.com</td>
+  </tr>
+  <tr>
+    <td>Alex</td>
+    <td>Christopher</td>
+    <td>alex@healfit.com</td>
+  </tr>
+  <tr>
+    <td>Sue</td>
+    <td>Klem</td>
+    <td>Klem@healfit.com</td>
+  </tr>
+  <tr>
+    <td>Andrew</td>
+    <td>Burn</td>
+    <td>Burn@mail.com</td>
+  </tr>
+  <tr>
+    <td>Sydney</td>
+    <td>Spitler</td>
+    <td>sydney@healfit.com</td>
+  </tr>
+  <tr>
+    <td>Sam</td>
+    <td>Pray</td>
+    <td>pray@healfit.com</td>
+  </tr>
+  <td>Lily</td>
+  <td>Kline</td>
+  <td>Kline@healfit.com</td>
+</tr>
+<tr>
+  <td>trenton</td>
+  <td>Boren</td>
+  <td>trenton@healfit.com</td>
+</tr>
+<tr>
+  <td>Harry</td>
+  <td>Vance</td>
+  <td>vance@healfit.com</td>
+</tr>
+<tr>
+  <td>Mary</td>
+  <td>Goodney</td>
+  <td>Goodney@mail.com</td>
+</tr>
+<tr>
+  <td>Jen</td>
+  <td>Coyle</td>
+  <td>Coyle@healfit.com</td>
+</tr>
+<tr>
+  <td>Ryan</td>
+  <td>fresca</td>
+  <td>fresca@healfit.com</td>
+</tr>
+  </tbody>
+</table>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<body>
